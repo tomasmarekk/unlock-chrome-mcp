@@ -24,7 +24,7 @@ function Backup-File {
         return $null
     }
 
-    $backupRoot = Join-Path $env:LOCALAPPDATA "Codex\backups\chrome-mcp-fix-info"
+    $backupRoot = Join-Path $env:LOCALAPPDATA "Codex\backups\unlock-chrome-mcp"
     New-Item -ItemType Directory -Path $backupRoot -Force | Out-Null
     $leaf = Split-Path -Leaf $Path
     $stamp = Get-Date -Format "yyyyMMdd-HHmmss"

@@ -56,7 +56,7 @@ def find_package_root(explicit: str | None) -> pathlib.Path:
 
 
 def backup(path: pathlib.Path) -> pathlib.Path:
-    backup_dir = pathlib.Path(os.environ.get("LOCALAPPDATA", pathlib.Path.home() / ".cache")) / "Codex" / "backups" / "chrome-mcp-fix-info"
+    backup_dir = pathlib.Path(os.environ.get("LOCALAPPDATA", pathlib.Path.home() / ".cache")) / "Codex" / "backups" / "unlock-chrome-mcp"
     backup_dir.mkdir(parents=True, exist_ok=True)
     stamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
     target = backup_dir / f"{path.name}.{stamp}.bak"

@@ -1,4 +1,4 @@
-# Chrome MCP Fix Info
+# Unlock Chrome MCP
 
 [![Windows](https://img.shields.io/badge/Windows-supported-0078D4)](#windows)
 [![macOS](https://img.shields.io/badge/macOS-supported-000000)](#macos)
@@ -6,7 +6,7 @@
 [![Chrome DevTools MCP](https://img.shields.io/badge/Chrome%20DevTools-MCP-4285F4)](https://github.com/ChromeDevTools/chrome-devtools-mcp)
 [![CDP](https://img.shields.io/badge/Chrome%20DevTools%20Protocol-CDP-34A853)](https://chromedevtools.github.io/devtools-protocol/)
 
-![Chrome MCP Fix Info hero](./hero-img.png)
+![Unlock Chrome MCP hero](./hero-img.png)
 
 Make `chrome-devtools-mcp` control OS-installed native Chrome instead of an isolated automation browser. It reuses visible Chrome windows launched from your OS, and it can start the same dedicated native Chrome profile when no compatible session is running.
 
@@ -46,7 +46,7 @@ Chrome windows are exposed as a flat list of page targets. The agent can still c
 Give this to the coding agent that should configure your machine:
 
 ```text
-Go to https://github.com/tomasmarekk/chrome-mcp-fix-info and configure my Chrome DevTools MCP setup exactly as described there.
+Go to https://github.com/tomasmarekk/unlock-chrome-mcp and configure my Chrome DevTools MCP setup exactly as described there.
 
 Goal:
 - chrome-devtools-mcp must control the OS-installed native Chrome profile configured by this repo, not an isolated automation-only browser.
@@ -115,15 +115,15 @@ At this stage it is fine if the official MCP still opens its own Chrome window. 
 After the official MCP exists, give your agent this repository and ask it to set up the machine from it:
 
 ```text
-Use https://github.com/tomasmarekk/chrome-mcp-fix-info to configure Chrome DevTools MCP on this machine.
+Use https://github.com/tomasmarekk/unlock-chrome-mcp to configure Chrome DevTools MCP on this machine.
 Read the README, explain the security risk, run the installer for my OS, verify it, and test that you can see my open Chrome tabs through the actual MCP tool.
 ```
 
 The agent should clone the repo:
 
 ```bash
-git clone https://github.com/tomasmarekk/chrome-mcp-fix-info.git
-cd chrome-mcp-fix-info
+git clone https://github.com/tomasmarekk/unlock-chrome-mcp.git
+cd unlock-chrome-mcp
 ```
 
 ### 3. Run the platform installer
@@ -177,7 +177,7 @@ The Windows installer:
 - creates/updates the dedicated Chrome profile at `%LOCALAPPDATA%\Codex\ChromeDevToolsMcpNativeProfile`,
 - updates the Start menu `Google Chrome` shortcut to launch that profile with `--remote-debugging-port=9222`,
 - updates `~\.codex\config.toml` with the matching MCP config,
-- backs up edited files under `%LOCALAPPDATA%\Codex\backups\chrome-mcp-fix-info`.
+- backs up edited files under `%LOCALAPPDATA%\Codex\backups\unlock-chrome-mcp`.
 
 After install:
 

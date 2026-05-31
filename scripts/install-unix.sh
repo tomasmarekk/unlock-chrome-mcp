@@ -57,7 +57,7 @@ find_mcp_command() {
 backup_file() {
   local path="$1"
   [[ -e "${path}" ]] || return 0
-  local backup_dir="${HOME}/.codex/backups/chrome-mcp-fix-info"
+  local backup_dir="${HOME}/.codex/backups/unlock-chrome-mcp"
   mkdir -p "${backup_dir}"
   cp -p "${path}" "${backup_dir}/$(basename "${path}").$(date +%Y%m%d-%H%M%S).bak"
 }

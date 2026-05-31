@@ -4,7 +4,7 @@ Use this prompt when you want another coding agent to recreate the setup from th
 
 ```text
 Please configure Chrome DevTools MCP on this machine using this repository:
-https://github.com/tomasmarekk/chrome-mcp-fix-info
+https://github.com/tomasmarekk/unlock-chrome-mcp
 
 Read the README and use the platform-specific installer.
 
