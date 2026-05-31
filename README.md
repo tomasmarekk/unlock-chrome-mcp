@@ -6,6 +6,8 @@
 [![Chrome DevTools MCP](https://img.shields.io/badge/Chrome%20DevTools-MCP-4285F4)](https://github.com/ChromeDevTools/chrome-devtools-mcp)
 [![CDP](https://img.shields.io/badge/Chrome%20DevTools%20Protocol-CDP-34A853)](https://chromedevtools.github.io/devtools-protocol/)
 
+![Chrome MCP Fix Info hero](./hero-img.png)
+
 Make `chrome-devtools-mcp` control OS-installed native Chrome instead of an isolated automation browser. It reuses visible Chrome windows launched from your OS, and it can start the same dedicated native Chrome profile when no compatible session is running.
 
 This repo is a practical recovery kit for people who want an agent tool such as Codex, Claude Code, Cursor, Gemini CLI, OpenCode, or another MCP client to use OS-installed visible native Chrome instead of a disconnected automation-only browser.
