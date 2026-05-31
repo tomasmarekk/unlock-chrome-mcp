@@ -100,7 +100,7 @@ This is the normal install flow.
 
 ### 1. Install official Chrome DevTools MCP in your agent tool
 
-First install and register the official Chrome DevTools MCP server in your "clicker" / coding agent / MCP client.
+First install and register the official Chrome DevTools MCP server in your clanker / coding agent / MCP client.
 
 For Codex, Claude Code, Cursor, Gemini CLI, OpenCode, or similar tools, follow that tool's normal MCP setup flow and point it at the official package:
 
