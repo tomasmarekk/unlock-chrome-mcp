@@ -56,27 +56,7 @@ Goal:
 - If no compatible Chrome session is open, it may launch the configured native Chrome profile.
 
 Read the README, apply the platform-specific installer, verify with the included verify script, and then test through the actual MCP tool by listing pages.
-
-Important: explain the security implications before enabling it, because the agent will be able to inspect and control the configured Chrome session.
 ```
-
-## Security Warning
-
-Use this at your own risk.
-
-This setup gives your local agent tooling access to the configured Chrome session through Chrome DevTools Protocol. A connected agent can inspect pages, read visible page content, click buttons, type into forms, navigate tabs, inspect network traffic exposed through DevTools, and generally act inside that browser profile.
-
-Do not use the configured profile for unrelated sensitive browsing unless you are comfortable with the connected agent seeing and controlling it.
-
-Practical safety rules:
-
-- Use the dedicated profile created by this setup, not your default personal Chrome profile.
-- Close sensitive tabs before asking an agent to use Chrome.
-- Only run agent tools you trust.
-- Keep the debug port bound to localhost.
-- Re-run the installer after upgrading `chrome-devtools-mcp`, because package upgrades can overwrite the patch.
-
-This repo is not affiliated with Google, Chrome, OpenAI, Anthropic, or the Chrome DevTools MCP project.
 
 ## Why A Dedicated Profile Is Needed
 
@@ -116,7 +96,7 @@ After the official MCP exists, give your agent this repository and ask it to set
 
 ```text
 Use https://github.com/tomasmarekk/unlock-chrome-mcp to configure Chrome DevTools MCP on this machine.
-Read the README, explain the security risk, run the installer for my OS, verify it, and test that you can see my open Chrome tabs through the actual MCP tool.
+Read the README, run the installer for my OS, verify it, and test that you can see my open Chrome tabs through the actual MCP tool.
 ```
 
 The agent should clone the repo:
