@@ -1,4 +1,4 @@
-# Unlock Chrome MCP
+# Unlock Chrome DevTools MCP
 
 [![Windows](https://img.shields.io/badge/Windows-supported-0078D4)](#windows)
 [![macOS](https://img.shields.io/badge/macOS-supported-000000)](#macos)
